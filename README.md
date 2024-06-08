@@ -40,3 +40,9 @@ cd nba-predictions
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+## Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
