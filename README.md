@@ -78,3 +78,36 @@ if __name__ == "__main__":
     stats = get_player_info(player_name)
     print(stats)
 ```
+## Usage
+
+### 📊 Data Collection
+- Use the `data_collection.py` script to fetch and store player and team data.
+- Store the collected data in the `data/` folder.
+
+### 🧹 Data Preprocessing
+- Use `data_preprocessing.py` to clean and preprocess the collected data for analysis and modeling.
+
+### 🤖 Model Training and Evaluation
+- Use `model_training.py` to train machine learning models on the preprocessed data.
+- Use `model_evaluation.py` to evaluate the performance of the trained models.
+
+### 📓 Jupyter Notebooks
+- Use the notebooks in the `notebooks/` folder for exploratory data analysis and visualization.
+
+## Contributing
+
+1. 🍴 Fork the repository.
+2. 🌿 Create a new branch (`git checkout -b feature-branch`).
+3. 💻 Make your changes.
+4. ✅ Commit your changes (`git commit -m 'Add some feature'`).
+5. 🚀 Push to the branch (`git push origin feature-branch`).
+6. 🔁 Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- 🙏 Thanks to the NBA API team for providing the tools and resources to access NBA data.
+- 💡 Inspired by the ongoing advancements in machine learning and data science in sports analytics.
