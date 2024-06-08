@@ -18,6 +18,7 @@ nba-predictions/
 ├── .gitignore              # 🚫 Git ignore file
 ├── requirements.txt        # 📜 List of required Python packages
 ├── README.md               # 📖 Project description and setup instructions
+```
 
 # Setup Instructions
 
