@@ -18,3 +18,18 @@ nba-predictions/
 ├── .gitignore              # 🚫 Git ignore file
 ├── requirements.txt        # 📜 List of required Python packages
 ├── README.md               # 📖 Project description and setup instructions
+
+# Setup Instructions
+
+## Prerequisites
+
+- 🐍 Python 3.x
+- 🌐 Git
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/nba-predictions.git
+cd nba-predictions
