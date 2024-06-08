@@ -46,3 +46,35 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```bash
 pip install -r requirements.txt
 ```
+## Open the Project in VS Code
+
+1. Open Visual Studio Code.
+2. Go to `File > Open Folder...` and select the cloned repository folder.
+
+## Configure Python Interpreter in VS Code
+
+1. Press `Ctrl+Shift+P` and select `Python: Select Interpreter`.
+2. Choose the interpreter from your virtual environment (`venv`).
+
+## Data Collection
+
+To collect player statistics using the `nba_api`, run the script in `src/data_collection.py`:
+
+```python
+from nba_api.stats.endpoints import commonplayerinfo
+from nba_api.stats.static import players
+
+def get_player_info(player_name):
+    player = players.find_players_by_full_name(player_name)[0]
+    player_id = player['id']
+    
+    player_info = commonplayerinfo.CommonPlayerInfo(player_id=player_id)
+    player_stats = player_info.get_data_frames()[0]
+    
+    return player_stats
+
+if __name__ == "__main__":
+    player_name = "LeBron James"
+    stats = get_player_info(player_name)
+    print(stats)
+```
