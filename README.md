@@ -34,3 +34,9 @@ nba-predictions/
 ```bash
 git clone https://github.com/yourusername/nba-predictions.git
 cd nba-predictions
+```
+### Set Up Virtual Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
